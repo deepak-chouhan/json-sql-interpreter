@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>JSON-SQL Lab</title>
+        <style>
+            body {
+                font-family: system-ui;
+                background: #1a1a1a;
+                color: white;
+                padding: 2rem;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            textarea,
+            input {
+                width: 100%;
+                background: #2a2a2a;
+                color: #00ff00;
+                border: 1px solid #444;
+                padding: 10px;
+                font-family: monospace;
+            }
+            textarea {
+                height: 300px;
+            }
+            button {
+                padding: 10px 20px;
+                background: #646cff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            pre {
+                background: #000;
+                padding: 15px;
+                border-radius: 5px;
+                overflow: auto;
+                max-height: 400px;
+                border: 1px solid #333;
+            }
+            .error {
+                color: #ff6b6b;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JSON-SQL Engine Lab</h1>
+        <div class="grid">
+            <div>
+                <h3>JSON Data</h3>
+                <textarea id="jsonInput">
+{
+  "users": [
+    { "id": 1, "name": "Alice", "meta": { "age": 25, "city": "Pune" } },
+    { "id": 2, "name": "Bob", "meta": { "age": 30, "city": "Mumbai" } },
+    { "id": 3, "name": "Charlie", "meta": { "age": 35, "city": "Pune" } }
+  ]
+}</textarea
+                >
+            </div>
+            <div>
+                <h3>SQL Query</h3>
+                <input
+                    type="text"
+                    id="sqlInput"
+                    value="SELECT name, meta.city FROM users WHERE meta.age > 26"
+                />
+                <button id="runBtn">Run Query</button>
+
+                <h3>Output</h3>
+                <pre id="output"></pre>
+            </div>
+        </div>
+        <script type="module" src="./main.ts"></script>
+    </body>
+</html>
