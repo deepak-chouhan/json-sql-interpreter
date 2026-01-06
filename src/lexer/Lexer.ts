@@ -1,4 +1,4 @@
-import { type Token, TokenType } from "../types.ts";
+import { type Token, TokenType } from "../types.js";
 
 export class Lexer {
     private readonly KEYWORDS = {

@@ -1,4 +1,4 @@
-import type { Expression, SelectStatement } from "../types.ts";
+import type { Expression, SelectStatement } from "../types.js";
 
 export class Executor {
     private resolvePath(data: any, path: string) {

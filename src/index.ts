@@ -1,6 +1,6 @@
-import { Executor } from "./executor/Executor.ts";
-import { Lexer } from "./lexer/Lexer.ts";
-import { Parser } from "./parser/Parser.ts";
+import { Executor } from "./executor/Executor.js";
+import { Lexer } from "./lexer/Lexer.js";
+import { Parser } from "./parser/Parser.js";
 
 console.log("JSON Query Tool Initialized...");
 

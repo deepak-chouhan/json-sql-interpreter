@@ -3,7 +3,7 @@ import {
     type Expression,
     type SelectStatement,
     type Token,
-} from "../types.ts";
+} from "../types.js";
 
 export class Parser {
     private readonly tokens: Token[];
