@@ -46,7 +46,8 @@ console.log(result);
 ```
 
 ```
-## Output:
+Output:
+
 JSON Query Tool Initialized...
 [ { name: 'Bob', city: 'Mumbai' }, { name: 'Charlie', city: 'Pune' } ]
 ```
