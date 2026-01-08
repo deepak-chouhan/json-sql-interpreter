@@ -14,7 +14,9 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsc"
+        "build": "npm run build:lib && npm run build:web",
+        "build:lib": "tsc",
+        "build:web": "vite build"
     },
     "keywords": [
         "json",
